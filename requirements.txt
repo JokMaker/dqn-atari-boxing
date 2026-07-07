@@ -1,5 +1,5 @@
-stable-baselines3[extra]==2.3.2
-gymnasium[atari,accept-rom-license]==0.29.1
+stable-baselines3[extra]
+gymnasium
 ale-py
 opencv-python
 pandas
