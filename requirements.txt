@@ -1,0 +1,6 @@
+stable-baselines3[extra]==2.3.2
+gymnasium[atari,accept-rom-license]==0.29.1
+ale-py
+opencv-python
+pandas
+matplotlib
