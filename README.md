@@ -139,7 +139,11 @@ Baseline reference: -10.8 ± 3.31.
 
 ## Gameplay Video
 
-See `docs/gameplay.mov` — play.py running against the final model, showing the agent (white boxer) pursuing the opponent and landing punches across full episodes.
+Watch the agent playing via play.py (final model, 3 episodes: +27, +34, +33):
+**[Gameplay video (Google Drive)](https://drive.google.com/drive/folders/1Y2cgqzKOOF8HYirpSn-sJJrRPAUHjA27)**
+
+The recording shows play.py being launched in the terminal and the agent
+(white boxer) pursuing and out-punching the opponent across full episodes.
 
 ## Evaluation (play.py)
 
