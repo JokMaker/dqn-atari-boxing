@@ -136,7 +136,7 @@ def main():
         # Define your hyperparameter sweep here
         experiments = [
             {
-                "run_name": "exp04_lr_mid",
+                "run_name": "exp01_lr_mid",
                 "policy": "CnnPolicy",
                 "lr": 2e-4,
                 "gamma": 0.99,
@@ -147,7 +147,7 @@ def main():
                 "total_timesteps": 100_000,
             },
             {
-                "run_name": "exp05_gamma_mid",
+                "run_name": "exp02_gamma_mid",
                 "policy": "CnnPolicy",
                 "lr": 1e-4,
                 "gamma": 0.97,
@@ -158,7 +158,7 @@ def main():
                 "total_timesteps": 100_000,
             },
             {
-                "run_name": "exp06_gamma_low_mid",
+                "run_name": "exp03_gamma_low_mid",
                 "policy": "CnnPolicy",
                 "lr": 1e-4,
                 "gamma": 0.92,
@@ -169,7 +169,7 @@ def main():
                 "total_timesteps": 100_000,
             },
             {
-                "run_name": "exp07_batch_mid",
+                "run_name": "exp04_batch_mid",
                 "policy": "CnnPolicy",
                 "lr": 1e-4,
                 "gamma": 0.99,
@@ -180,7 +180,7 @@ def main():
                 "total_timesteps": 100_000,
             },
             {
-                "run_name": "exp08_eps_start_mid",
+                "run_name": "exp05_eps_start_mid",
                 "policy": "CnnPolicy",
                 "lr": 1e-4,
                 "gamma": 0.99,
@@ -191,7 +191,7 @@ def main():
                 "total_timesteps": 100_000,
             },
             {
-                "run_name": "exp09_eps_end_low",
+                "run_name": "exp06_eps_end_low",
                 "policy": "CnnPolicy",
                 "lr": 1e-4,
                 "gamma": 0.99,
@@ -202,7 +202,7 @@ def main():
                 "total_timesteps": 100_000,
             },
             {
-                "run_name": "exp10_eps_fraction_mid",
+                "run_name": "exp07_eps_fraction_mid",
                 "policy": "CnnPolicy",
                 "lr": 1e-4,
                 "gamma": 0.99,
@@ -213,7 +213,7 @@ def main():
                 "total_timesteps": 100_000,
             },
             {
-                "run_name": "exp11_balanced_tuning",
+                "run_name": "exp08_balanced_tuning",
                 "policy": "CnnPolicy",
                 "lr": 2e-4,
                 "gamma": 0.97,
@@ -224,7 +224,7 @@ def main():
                 "total_timesteps": 100_000,
             },
             {
-                "run_name": "exp12_aggressive_batch",
+                "run_name": "exp09_aggressive_batch",
                 "policy": "CnnPolicy",
                 "lr": 1e-4,
                 "gamma": 0.99,
@@ -235,7 +235,7 @@ def main():
                 "total_timesteps": 100_000,
             },
             {
-                "run_name": "exp13_conservative_lr",
+                "run_name": "exp10_conservative_lr",
                 "policy": "CnnPolicy",
                 "lr": 7e-5,
                 "gamma": 0.99,
