@@ -136,7 +136,7 @@ Vincent's baseline run was lost to a compute failure; his experiments are interp
 
 **Run-to-run variance is real and large.** The same config (batch=16) scored -51.2 in one member's session and -7.2 in another's; gamma=0.999 scored +5.4 and -16.6. Fixed seeds do not guarantee identical results across GPU sessions because CUDA operations are non-deterministic and DQN compounds small divergences. This is why each member's observations are anchored to their own baseline, and why we favour patterns confirmed across multiple members over single-run results.
 
-**Final configuration and why it wins:** `lr=1e-4` (centre of the narrow safe zone), `batch=64` (stability confirmed by three members independently), `gamma=0.99` (standard; gamma shown to be insensitive), default epsilon schedule (all deviations tested made things worse). At 100k steps this scored +7.4 — the best of all 35 group runs — and its curve was still climbing, so we trained it for 500,000 steps to produce the final model: **+30.00 ± 16.44**, an agent that decisively wins matches.
+**Final configuration and why it wins:** `lr=1e-4` (centre of the narrow safe zone), `batch=64` (stability confirmed by three members independently), `gamma=0.99` (standard; gamma shown to be insensitive), default epsilon schedule (all deviations tested made things worse). At 100k steps this scored +7.4 — the best of all 34 group runs — and its curve was still climbing, so we trained it for 500,000 steps to produce the final model: **+30.00 ± 16.44**, an agent that decisively wins matches.
 
 ## Gameplay Video
 
