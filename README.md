@@ -35,7 +35,7 @@ train.py               # Canonical training script — DQN agent, experiment log
 play.py                # Loads models/dqn_model.zip, plays with rendering (greedy policy)
 train_vincent.py       # Vincent's experiment sweep (variant of train.py)
 train_wagner.py        # Wagner's experiment sweep (variant of train.py)
-notebooks/             # Shared Colab notebook used for GPU training
+wagner_colab_train.ipynb   # Colab notebook used for GPU training
 models/dqn_model.zip   # Final trained model (500k steps)
 experiments/           # Each member's experiment results (CSV)
 logs/                  # Training logs
@@ -106,9 +106,10 @@ Baseline reference: -10.8 ± 3.31.
 
 ### Vincent — Experiments
 
+Vincent's baseline run was lost to a compute failure; his experiments are interpreted against the group's shared baseline configuration.
+
 | # | Run | lr | gamma | batch | eps_start | eps_end | eps_frac | Mean reward | Noted behaviour |
 |---|-----|----|----|----|----|----|----|----|----|
-| 1 | baseline | 1e-4 | 0.99 | 32 | 1.0 | 0.05 | 0.1 | (see CSV) | Reference for this member's runs. |
 | 2 | lr_mid | 2e-4 | 0.99 | 32 | 1.0 | 0.05 | 0.1 | +2.4 ± 4.36 | Extends the learning-rate curve: 2e-4 still performs well, so the safe zone spans roughly 1e-4 to 2e-4. |
 | 3 | gamma_high | 1e-4 | 0.999 | 32 | 1.0 | 0.05 | 0.1 | +5.4 ± 10.33 | Best run in this set — notably, the same config scored -16.6 in Wagner's session, illustrating DQN's run-to-run variance. |
 | 4 | gamma_mid | 1e-4 | 0.97 | 32 | 1.0 | 0.05 | 0.1 | -6.2 ± 8.06 | Mid-range gamma below baseline in this run. |
