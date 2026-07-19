@@ -1,3 +1,22 @@
+"""
+play.py
+Loads the trained DQN model and plays Boxing with rendering.
+Uses greedy action selection (highest Q-value) for evaluation.
+"""
+
+import gymnasium as gym
+import ale_py
+from stable_baselines3 import DQN
+from stable_baselines3.common.env_util import make_atari_env
+from stable_baselines3.common.vec_env import VecFrameStack
+
+gym.register_envs(ale_py)
+
+ENV_ID = "ALE/Boxing-v5"
+MODEL_PATH = "models/dqn_model.zip"
+N_EPISODES = 3
+
+
 def create_env():
     """Create the Boxing environment with the SAME preprocessing as train.py."""
     env = make_atari_env(
